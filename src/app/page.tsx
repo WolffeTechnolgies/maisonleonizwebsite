@@ -5,8 +5,8 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <header className="flex items-center justify-center px-6 pt-8 sm:justify-between sm:px-10">
         <Image
-          src="/brand/logo-monogram.png"
-          alt="Maison Leonis monogram"
+          src="/brand/logo-seal.png"
+          alt="Maison Leonis coat of arms"
           width={40}
           height={40}
           priority
@@ -50,8 +50,8 @@ export default function Home() {
 
       <footer className="flex flex-col items-center gap-3 px-6 pb-10 text-center">
         <Image
-          src="/brand/logo-monogram.png"
-          alt="Maison Leonis monogram"
+          src="/brand/logo-seal.png"
+          alt="Maison Leonis coat of arms"
           width={40}
           height={40}
         />
