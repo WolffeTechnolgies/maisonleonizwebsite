@@ -18,12 +18,12 @@ const jost = Jost({
 export const metadata: Metadata = {
   title: "Maison Leonis | Launching Soon",
   description:
-    "Maison Leonis — a new house of luxury fashion. The debut collection is arriving soon. Join the list to be the first to know.",
+    "Maison Leonis — a new house of luxury fashion. The debut collection is arriving soon.",
   openGraph: {
     title: "Maison Leonis | Launching Soon",
     description:
       "A new house of luxury fashion. The debut collection is arriving soon.",
-    images: ["/brand/logo-full.png"],
+    images: ["/brand/logo-seal.png"],
   },
 };
 

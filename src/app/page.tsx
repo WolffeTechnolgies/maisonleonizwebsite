@@ -1,5 +1,4 @@
 import Image from "next/image";
-import NotifyForm from "@/components/NotifyForm";
 
 export default function Home() {
   return (
@@ -18,47 +17,43 @@ export default function Home() {
         </span>
       </header>
 
-      <main className="flex flex-1 flex-col items-center justify-center gap-10 px-6 py-16 text-center">
+      <main className="flex flex-1 flex-col items-center justify-center gap-8 px-6 py-16 text-center">
         <Image
-          src="/brand/logo-full.png"
-          alt="Maison Leonis"
-          width={340}
-          height={340}
+          src="/brand/logo-seal.png"
+          alt="Maison Leonis seal"
+          width={280}
+          height={280}
           priority
-          className="w-56 sm:w-72"
+          className="w-48 sm:w-60"
         />
+
+        <div className="flex flex-col items-center gap-2">
+          <div className="h-px w-16 bg-gold-muted/50" />
+          <h1 className="font-display text-2xl uppercase tracking-widest-plus text-gold-muted sm:text-3xl">
+            Maison Leonis
+          </h1>
+        </div>
 
         <div className="flex max-w-xl flex-col items-center gap-4">
           <p className="font-display text-xl italic text-gold-muted sm:text-2xl">
             A New House of Luxury
           </p>
-          <h1 className="font-display text-3xl font-medium uppercase tracking-widest-plus text-ink sm:text-4xl">
+          <h2 className="font-display text-3xl font-medium uppercase tracking-widest-plus text-ink sm:text-4xl">
             Launching Soon
-          </h1>
+          </h2>
           <p className="max-w-md text-sm leading-relaxed text-ink/60 sm:text-base">
             The debut collection of Maison Leonis is in its final stages.
             Be among the first to experience it.
           </p>
         </div>
-
-        <NotifyForm />
-
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="text-xs uppercase tracking-widest-plus text-ink/50 transition-colors hover:text-gold"
-        >
-          Follow on Instagram
-        </a>
       </main>
 
       <footer className="flex flex-col items-center gap-3 px-6 pb-10 text-center">
         <Image
-          src="/brand/logo-seal.png"
-          alt="Maison Leonis seal"
-          width={56}
-          height={56}
+          src="/brand/logo-monogram.png"
+          alt="Maison Leonis monogram"
+          width={40}
+          height={40}
         />
         <p className="text-[11px] uppercase tracking-widest-plus text-ink/40">
           &copy; {new Date().getFullYear()} Maison Leonis. All rights reserved.
