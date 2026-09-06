@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1712;
+
+  /* Brand palette, drawn from the Maison Leonis crest */
+  --color-ivory: #ffffff;
+  --color-ink: #17140f;
+  --color-gold: #b8874a;
+  --color-gold-light: #d9bd86;
+  --color-gold-pale: #f3e6cd;
+  --color-gold-muted: #a6905f;
+  --color-bronze: #5c4324;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ivory: var(--color-ivory);
+  --color-ink: var(--color-ink);
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+  --color-gold-pale: var(--color-gold-pale);
+  --color-gold-muted: var(--color-gold-muted);
+  --color-bronze: var(--color-bronze);
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-jost);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@layer utilities {
+  .tracking-widest-plus {
+    letter-spacing: 0.28em;
+  }
+}
